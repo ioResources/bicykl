@@ -1,0 +1,185 @@
+/* rewizja: 7 */
+
+body {
+  color: #fff;
+  font-family: Helvetica, Verdana, sans;
+  
+  background: #0068c6; /* Old browsers */
+  background: -moz-linear-gradient(top,  #0068c6 0%, #d8e9ff 100%); /* FF3.6+ */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#0068c6), color-stop(100%,#d8e9ff)); /* Chrome,Safari4+ */
+  background: -webkit-linear-gradient(top,  #0068c6 0%,#d8e9ff 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-linear-gradient(top,  #0068c6 0%,#d8e9ff 100%); /* Opera 11.10+ */
+  background: -ms-linear-gradient(top,  #0068c6 0%,#d8e9ff 100%); /* IE10+ */
+  background: linear-gradient(to bottom,  #0068c6 0%,#d8e9ff 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#0068c6', endColorstr='#d8e9ff',GradientType=0 ); /* IE6-9 */  
+}
+
+/* bez podkreślania linków */
+a {
+  text-decoration: none;
+}
+
+/* pływanie elementów */
+.primary, #logo, .tile {
+  float: left;
+}
+.secondary, #contact {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+.hidden {
+  display: none;
+}
+
+#page {
+  /* klasyka - stała szerokość 960px i ustawiamy na środku */
+  width: 960px;
+  margin: 0 auto;
+}
+
+/***** Nagłówek *****/
+header h1 {
+  margin-top: 10px;
+}
+
+/* kontakt */
+header #contact {
+  text-align: right;
+  font-size: 1.5em;
+  margin-top: 10px;
+  padding-right: 16px;
+  line-height: 1.5em;
+}
+
+header #contact a {
+  color: #111;
+}
+
+/***** Nawigacja *****/
+nav ul {
+  width: 100%;
+  height: 2.4em;
+  list-style: none;
+  padding: 0;
+  background: rgba(0, 95, 212, 0.8);
+  border-radius: 10px;
+}
+
+nav ul li {
+  display: inline;
+  padding: 0px;
+}
+
+nav ul li a {
+  display: block;
+  float: left;
+  height: 1.2em;
+  padding: 0.6em 1em;
+  margin:0;
+  color: #fff;
+}
+
+nav ul li a:hover, a.active {
+  background: #95bdec;
+}
+
+/* ostatni element nawigacji ma być przytulony do prawej */
+nav ul li:last-child {
+  float: right;
+}
+/* zaokrąglone wierzchołki skrajnych pozycji nawigacji */
+nav ul li:first-child a:hover,
+nav ul li:first-child a.active {
+  border-radius: 10px 0 0 10px;
+}
+
+nav ul li:last-child a:hover,
+nav ul li:last-child a.active {
+  border-radius: 0 10px 10px 0;
+} 
+
+/***** Zawartość *****/
+/* szerokości ustawiamy na sztywno */
+.primary {
+  width: 720px;
+}
+
+.secondary {
+  width: 220px;
+  padding: 10px;  
+  background: rgba(255, 255, 255, 0.5);
+  border-radius: 10px;
+  color: #333;
+  font-size: 1em;
+}
+
+.secondary section {
+  border-bottom: 1px dotted #0b67d4;
+}
+
+.secondary section:last-child {
+  border-bottom: none;
+}
+
+.secondary h2 {
+  text-align: center;
+  font-size: 1.2em;
+  line-height: 1em;
+  color: #0068c6;
+  text-transform: uppercase;
+}
+
+/***** Kafelki *****/
+.tile {
+  position: relative;
+  width: 200px;
+  min-height: 230px;
+  margin: 0 20px 20px 0;
+  padding: 5px 5px 45px 5px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 0.8em;
+  color: #111;
+  border: 3px solid #fff;
+  border-radius: 10px;
+}
+
+.tile:hover {
+  border-color: #0a67d4;
+}
+
+.tile h2 {
+  font-size: 1.2em;
+}
+
+.tile p span {
+  font-weight: bold;
+}
+/* przycisk "Zarezerwuj" */
+.tile a {
+  display: block;
+  position: absolute;
+  width: 120px;
+  bottom: 16px;
+  left: 40px; 
+  padding: 8px 10px;
+
+  background-color: #0a67d4;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2em;
+}
+
+.tile a:hover {
+  background-color: #95bdec;
+  color: #111;
+}
+
+/***** Stopka *****/
+footer {
+  background-color: #7ad500;
+  padding: 10px;
+  border-radius: 10px;
+}

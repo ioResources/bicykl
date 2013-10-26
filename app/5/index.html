@@ -1,0 +1,115 @@
+<!--
+  Projekt "Bicykl".
+  Rewizja: 5
+  Zmodyfikowany kod HTML - więcej "semantyki".
+  Wstawiona główna zawartość (kafelki z rowerami) i dodane style strukturalne. 
+-->
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Bicykl &ndash; wypożyczalnia rowerów</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Główny div trzymający całą stronę -->
+  <div id="page">
+    
+    <!-- Nagłówek zawierający logo, informacje kontaktowe i nawigację -->
+    <header>
+      <!-- div logo zamieniony na h1 -->
+      <h1 id="logo">
+        <img src="img/logo.png" alt="BICYKL - wypożyczalnia rowerów">
+      </h1>
+      <!-- sekcja informacji kontaktowych uzupełniona mikroformatami (http://microformats.org/)-->
+      <section id="contact" class="vcard">
+        <span class="fn org hidden">Bicykl</span>
+        <a class="tel" href="tel:+48987139221">987 139 221</a><br>
+        <a class="email" href="mailto:info@bicykl.com">info@bicykl.com</a>
+      </section>
+      
+      <nav class="clear">
+        <ul>
+          <li>O nas</li>
+          <li>Oferta</li>
+          <li>Rezerwacja</li>
+          <li>Moje konto</li>        
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- Zawartość strony -->
+    <div id="content" role="main">
+      <section class="primary">
+        
+        <!-- kafelek z opisem roweru -->
+        <section class="tile">
+          <img src="img/bikes/spec-stumpjumper-29-thumb.jpg" alt="Specialized Stumpjumper 29">
+          <h2>Specialized Stumpjumper 29</h2>
+          <p>Typ: <span>górski</span></p>
+          <p>Cena za godz.: <span>10 zł</span></p>
+        </section>
+
+        <!-- kafelek z opisem roweru -->
+        <section class="tile">
+          <img src="img/bikes/spec-enduro-comp-thumb.jpg" alt="Specialized Enduro Comp">
+          <h2>Specialized Enduro Comp</h2>
+          <p>Typ: <span>górski</span></p>
+          <p>Cena za godz.: <span>15 zł</span></p>
+        </section>
+
+        <!-- kafelek z opisem roweru -->
+        <section class="tile">
+          <img src="img/bikes/spec-crossroads-thumb.jpg" alt="Specialized Crossroads Step Through">
+          <h2>Specialized Crossroads Step Through</h2>
+          <p>Typ: <span>miejski</span></p>
+          <p>Cena za godz.: <span>7 zł</span></p>
+        </section>                
+        
+        <!-- kafelek z opisem roweru -->
+        <section class="tile">
+          <img src="img/bikes/brompton-h6l-thumb.jpg" alt="Brompton H6L">
+          <h2>Brompton H6L</h2>
+          <p>Typ: <span>składany</span></p>
+          <p>Cena za godz.: <span>10 zł</span></p>
+        </section>
+        
+        <!-- kafelek z opisem roweru -->
+        <section class="tile">
+          <img src="img/bikes/accent-crosstown-thumb.jpg" alt="Accent Crosstown">
+          <h2>Accent Crosstown</h2>
+          <p>Typ: <span>miejski</span></p>
+          <p>Cena za godz.: <span>3 zł</span></p>
+        </section>
+        
+        <!-- kafelek z opisem roweru -->
+        <section class="tile">
+          <img src="img/bikes/unibike-viking-thumb.jpg" alt="Unibike Viking">
+          <h2>Unibike Viking</h2>
+          <p>Typ: <span>dziecięcy</span></p>
+          <p>Cena za godz.: <span>1 zł</span></p>
+        </section>
+      </section>
+      
+      <aside class="secondary">
+        <section>
+          <h2>Tylko w tym tygodniu!</h2>
+          <p>W tym tygodniu ceny wypożyczenia rowerów górskich są niższe o 10%. Nie przegap okazji, wyskocz w górki!</p>
+        </section>
+        <section>
+          <h2>Rodzinna jazda</h2>
+          <p>W lipcu i sierpniu możesz wypożyczyć rowery dla całej rodziny, a płacisz tylko za dwie dorosłe osoby! Szczegóły promocji w regulaminie.</p>
+        </section>
+      </aside>
+    </div> <!-- content -->
+
+    <!-- Stopka -->
+    <footer class="clear">
+      <small>Copyright &copy; 2013 | Bicykl</small>
+    </footer>
+
+  </div> <!-- page -->
+</body>
+</html>
+

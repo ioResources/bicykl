@@ -1,0 +1,90 @@
+/* rewizja: 6 */
+
+body {
+  background: #1977cd;
+  color: #fff;
+  font-family: Helvetica, Verdana, sans;
+}
+
+.primary, #logo, .tile {
+  float: left;
+}
+.secondary, #contact {
+  float: right;
+}
+.clear {
+  clear: both;
+}
+
+.hidden {
+  display: none;
+}
+
+#page {
+  /* klasyka - stała szerokość 960px i ustawiamy na środku */
+  width: 960px;
+  margin: 0 auto;
+}
+
+/***** Nawigacja *****/
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  padding: 5px 1em;
+}
+
+/* ostatni element nawigacji ma być przytulony do prawej */
+nav ul li:last-child {
+  float: right;
+}
+
+/***** Zawartość *****/
+/* szerokości ustawiamy na sztywno */
+.primary {
+  width: 720px;
+}
+
+.secondary {
+  width: 240px;
+}
+
+/***** Kafelki *****/
+.tile {
+  position: relative;
+  width: 200px;
+  min-height: 230px;
+  margin: 0 20px 20px 0;
+  padding: 10px 10px 50px 10px;
+  text-align: center;
+  background-color: #fff;
+  font-size: 0.8em;
+  color: #111;
+  border-radius: 10px;
+}
+
+.tile h2 {
+  font-size: 1.2em;
+}
+
+.tile p span {
+  font-weight: bold;
+}
+/* przycisk "Zarezerwuj" */
+.tile a {
+  display: block;
+  position: absolute;
+  width: 120px;
+  bottom: 16px;
+  left: 40px; 
+  padding: 8px 10px;
+
+  background-color: #0a67d4;
+  border-radius: 10px;
+  color: #fff;
+  font-size: 1.2em;
+  text-decoration: none;
+}
