@@ -45,9 +45,9 @@ nav ul li:last-child {
 /***** Zawartość *****/
 /* szerokości ustawiamy na sztywno */
 .primary {
-  width: 640px;
+  width: 720px;
 }
 
 .secondary {
-  width: 300px;
+  width: 240px;
 }
